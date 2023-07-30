@@ -1,0 +1,24 @@
+<p>registration works!</p>
+<h3>{{temp}}</h3>
+
+<table class="table table-bordered table-striped">
+    <thead>
+        <tr>
+            <th>userId</th>
+            <th>name</th>
+            <th>email</th>
+            <th> password</th>
+            <th> address </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let user of users">
+            <td>{{user.userId}}</td>
+            <td>{{user.name}}</td>
+            <td>{{user.email}}</td>
+            <td>{{user.password}}</td>
+            <td>{{user.address}}</td>
+        </tr>
+    </tbody>
+</table>
+
