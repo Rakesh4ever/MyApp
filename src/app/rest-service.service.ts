@@ -10,7 +10,7 @@ export class RestServiceService {
   constructor(private http:HttpClient) { }
 
   getUsers(){
-    const URL ="http://localhost:9001/api/user/getusers";
+    const URL ="/api/user/getusers";
 
     return this.http.get<User>(URL);
   }
